@@ -29,3 +29,11 @@ python demo/image_demo.py demo/demo.jpg oriented_rcnn_r50_fpn_1x_dota_le90.py or
 You will see a new image result.jpg on your c urrent folder
 
 ## Test Dota1.0
+
+
+## Train Data1.5
+- 运行`tools/data/dota/labelTxtModifed.py`, 修改dota数据集的标签，去除前两行没用的
+- 修改`mmrotate/datasets/dota.py`, 添加DOTA1.5中多出的一个类别
+- 修改`configs/_base_/datasets/dotav1.py`, 修改data_root路径，修改train和test文件路径
+- 运行脚本训练
+
