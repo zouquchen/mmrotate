@@ -10,7 +10,7 @@ mim install mmdet
 ```
 
 ```shell
-conda create --n openmmlab python=3.8 pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=10.2 -c pytorch -y
+conda create -n openmmlab python=3.8 pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=10.2 -c pytorch -y
 conda activate open-mmlab
 pip install openmim
 mim install mmcv-full
