@@ -61,9 +61,25 @@ Step 4. split dota dataset, crop the original images into 1024×1024 patches wit
 pip install shapely
 ```
 ```shell
-python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs1/ss_train.json
-python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs1/ss_val.json
-python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs1/ss_test.json
+python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs_1/ss_train.json
+python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs_1/ss_val.json
+python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs_1/ss_test.json
 ```
 Step 5. 运行脚本训练
+```shell
+python tools/train.py "./configs/oriented_reppoints/oriented_reppoints_r50_fpn_1x_dota_le135.py" --work-dir "D:/zqc2/1-code/mmrotate_dir/oriented_reppoints_r50_fpn_1x_dota_le135/20230214"
+```
 
+## Train for ship
+Step 1. 生成数据集 dota1.5_ship
+Step 2. 切图片
+```shell
+python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs_1/ss_train.json
+python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs_1/ss_val.json
+```
+Step 3. 修改`configs/_base_/datasets/dotav1.py`
+Step 4. 修改`mmrotate/datasets/dota.py`
+Step 5. 训练
+```shell
+python tools/train.py "./configs/oriented_reppoints/oriented_reppoints_r50_fpn_1x_dota_le135.py" --work-dir "D:/zqc2/1-code/mmrotate_dir/oriented_reppoints_r50_fpn_1x_dota_le135/20230214"
+```

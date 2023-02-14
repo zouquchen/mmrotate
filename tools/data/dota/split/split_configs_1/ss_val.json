@@ -1,10 +1,10 @@
 {
   "nproc": 10,
   "img_dirs": [
-    "D:/zqc2/2-dataset/dota1.5/val/images/"
+    "D:/zqc2/2-dataset/dota1.5_ship/val/images/"
   ],
   "ann_dirs": [
-    "D:/zqc2/2-dataset/dota1.5/val/labelTxt/"
+    "D:/zqc2/2-dataset/dota1.5_ship/val/labelTxt/"
   ],
   "sizes": [
     1024
@@ -23,6 +23,6 @@
     116,
     124
   ],
-  "save_dir": "D:/zqc2/2-dataset/dota1.5_ss/val/",
+  "save_dir": "D:/zqc2/2-dataset/dota1.5_ship_ss/val/",
   "save_ext": ".png"
 }

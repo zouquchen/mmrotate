@@ -16,4 +16,5 @@ python tools/data/dota/split/img_split.py --base-json "tools/data/dota/split/spl
 python tools/data/dota/split/img_split.py --base-json "tools/data/dota/split/split_configs_1/ss_val.json"
 python tools/data/dota/split/img_split.py --base-json "tools/data/dota/split/split_configs_1/ss_test.json"
 
+# 训练
 python tools/train.py "./configs/oriented_reppoints/oriented_reppoints_r50_fpn_1x_dota_le135.py" --work-dir "D:/zqc2/1-code/mmrotate_dir/oriented_reppoints_r50_fpn_1x_dota_le135/20230214"
