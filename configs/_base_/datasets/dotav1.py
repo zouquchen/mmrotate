@@ -2,7 +2,7 @@
 dataset_type = 'DOTADataset'
 # data_root = 'data/split_1024_dota1_0/'
 # data_root = 'E:/graduation-project2/4-dataset/dota1.5/'  # 实验室
-data_root = 'D:/zqc2/2-dataset/dota1.5/'# 中心
+data_root = 'D:/zqc2/2-dataset/dota1.5/'  # 中心
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
 train_pipeline = [

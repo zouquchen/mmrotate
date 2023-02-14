@@ -58,6 +58,9 @@ Step 3. 修改data_root路径，修改train和test文件路径
 
 Step 4. split dota dataset, crop the original images into 1024×1024 patches with an overlap of 200
 ```shell
+pip install shapely
+```
+```shell
 python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs1/ss_train.json
 python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs1/ss_val.json
 python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs1/ss_test.json
