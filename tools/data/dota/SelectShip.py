@@ -5,12 +5,12 @@ import cv2
 catagory = ['ship']  # 指定类别的名称
 
 # 中心path
-# root_path = 'D:/zqc2/2-dataset/dota1.5'
-# output_path = 'D:/zqc2/2-dataset/dota1.5_ship'
+root_path = 'D:/zqc2/2-dataset/dota1.5'
+output_path = 'D:/zqc2/2-dataset/dota1.5_ship'
 
 # 实验室path
-root_path = 'E:/graduation-project2/4-dataset/dota1.5'
-output_path = 'E:/graduation-project2/4-dataset/dota1.5_ship'
+# root_path = 'E:/graduation-project2/4-dataset/dota1.5'
+# output_path = 'E:/graduation-project2/4-dataset/dota1.5_ship'
 
 
 def get_file_from_root(path, ext=None):
