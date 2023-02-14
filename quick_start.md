@@ -1,11 +1,24 @@
 ## Installation
 
+step 1. prepare enviroment
 ```shell
 conda create -n open-mmlab python=3.7 pytorch==1.7.0 cudatoolkit=10.1 torchvision -c pytorch -y
 conda activate open-mmlab
 pip install openmim
 mim install mmcv-full
 mim install mmdet
+```
+
+```shell
+conda create --n openmmlab python=3.8 pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=10.2 -c pytorch -y
+conda activate open-mmlab
+pip install openmim
+mim install mmcv-full
+mim install mmdet
+```
+
+step 2. make
+```shell
 git clone https://github.com/open-mmlab/mmrotate.git
 cd mmrotate
 pip install -r requirements/build.txt
