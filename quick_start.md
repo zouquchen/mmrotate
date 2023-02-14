@@ -10,18 +10,18 @@ mim install mmdet
 ```
 
 ```shell
-conda create -n openmmlab python=3.8 pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -y
+conda create -n openmmlab python=3.8 -y
 conda activate openmmlab
+conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge
 pip install openmim
 mim install mmcv-full
 mim install mmdet
 ```
+
 ```shell
-pip uninstall torch
-pip uninstall torchvision
-pip uninstall cudatoolkit
-conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch
+pip install opencv-python
 ```
+
 step 2. make
 ```shell
 git clone https://github.com/open-mmlab/mmrotate.git
@@ -30,9 +30,6 @@ pip install -r requirements/build.txt
 pip install -v -e .
 ```
 
-```shell
-pip install opencv-python
-```
 
 ## Verify the installation
 
@@ -61,9 +58,9 @@ Step 3. 修改data_root路径，修改train和test文件路径
 
 Step 4. split dota dataset, crop the original images into 1024×1024 patches with an overlap of 200
 ```shell
-python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_trainval.json
-
-python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_test.json
+python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs1/ss_train.json
+python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs1/ss_val.json
+python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs1/ss_test.json
 ```
 Step 5. 运行脚本训练
 
