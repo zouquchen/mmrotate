@@ -3,7 +3,8 @@
 """
 import os
 
-dota_root = "E:/graduation-project2/4-dataset/dota1.5"
+# dota_root = "E:/graduation-project2/4-dataset/dota1.5"
+dota_root = "D:/zqc2/2-dataset/dota1.5"
 old_label_folder = "labelTxt"
 new_label_folder = "labelTxt_new"
 
