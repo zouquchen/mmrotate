@@ -10,13 +10,18 @@ mim install mmdet
 ```
 
 ```shell
-conda create -n openmmlab python=3.8 pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=10.2 -c pytorch -y
+conda create -n openmmlab python=3.8 pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -y
 conda activate openmmlab
 pip install openmim
 mim install mmcv-full
 mim install mmdet
 ```
-
+```shell
+pip uninstall torch
+pip uninstall torchvision
+pip uninstall cudatoolkit
+conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch
+```
 step 2. make
 ```shell
 git clone https://github.com/open-mmlab/mmrotate.git
