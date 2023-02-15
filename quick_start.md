@@ -44,7 +44,9 @@ python demo/image_demo.py demo/demo.jpg oriented_rcnn_r50_fpn_1x_dota_le90.py or
 You will see a new image result.jpg on your c urrent folder
 
 ## Test Dota1.5
-
+```shell
+python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
+```
 
 ## Train Dota1.5
 Step 1. 修改dota数据集的标签，去除前两行没用的信息 
