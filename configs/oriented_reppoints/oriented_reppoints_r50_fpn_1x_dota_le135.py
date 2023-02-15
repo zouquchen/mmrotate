@@ -28,7 +28,7 @@ model = dict(
         norm_cfg=norm_cfg),
     bbox_head=dict(
         type='OrientedRepPointsHead',
-        num_classes=1,  # 类别数量
+        num_classes=16,  # 类别数量
         in_channels=256,
         feat_channels=256,
         point_feat_channels=256,
@@ -68,7 +68,7 @@ model = dict(
             pos_weight=-1,
             debug=False)),
     test_cfg=dict(
-        nms_pre=2000,
+        nms_pre=1000,  # 尝试解决bug，从2000改到1000
         min_bbox_size=0,
         score_thr=0.05,
         nms=dict(iou_thr=0.4),
