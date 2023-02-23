@@ -14,7 +14,7 @@
 set CUDA_VISIBLE_DEVICES=1
 
 # oriented_reppoints_r50
-# python tools/train.py "./configs/oriented_reppoints/oriented_reppoints_r50_fpn_1x_dota_le135.py" --work-dir "D:/zqc2/1-code/mmrotate_dir/oriented_reppoints_r50_fpn_1x_dota_le135/20230217"
+# python tools/train.py "./configs/oriented_reppoints/oriented_reppoints_r50_fpn_1x_dota_le135.py" --work-dir "D:/zqc2/1-code/mmrotate_dir/oriented_reppoints_r50_fpn_1x_dota_le135/20230223"
 
 # rotated_reppoints
 python tools/train.py "./configs/rotated_reppoints/rotated_reppoints_r50_fpn_1x_dota_le135.py" --work-dir "D:/zqc2/1-code/mmrotate_dir/rotated_reppoints_r50_fpn_1x_dota_le135/20230220"

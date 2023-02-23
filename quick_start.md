@@ -49,10 +49,10 @@ python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
 ```
 
 ## Train Dota1.5
-Step 1. 修改dota数据集的标签，去除前两行没用的信息 
+Step 1. 修改dota数据集的标签，去除前两行没用的信息(skip)
 运行`tools/data/dota/labelTxtModifed.py`, 
 
-Step 2. 添加DOTA1.5中多出的一个类别
+Step 2. 添加DOTA1.5中多出的一个类别(skip)
 修改`mmrotate/datasets/dota.py`, 
 
 Step 3. 修改data_root路径，修改train和test文件路径
@@ -63,9 +63,9 @@ Step 4. split dota dataset, crop the original images into 1024×1024 patches wit
 pip install shapely
 ```
 ```shell
-python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs_1/ss_train.json
-python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs_1/ss_val.json
-python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs_1/ss_test.json
+python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_train.json
+python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_val.json
+python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_test.json
 ```
 Step 5. 运行脚本训练
 ```shell
